@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FileWalker.Avalonia": {
+      "commandName": "Project",
+      "commandLineArgs": "Avalonia C:\\Users\\Sykoj 4 4"
+    }
+  }
+}
