@@ -5,7 +5,7 @@
         SizeToContent="3">
 
   <Grid RowDefinitions="Auto, *">
-    <ListBox Items="{Binding FileProcessor.Results.MatchingFilenames}" Grid.Row="0" Width="200" Height="300" HorizontalAlignment="2"/>
+    <ListBox Items="{Binding Results.MatchingFilenames}" Grid.Row="0" Width="200" Height="300" HorizontalAlignment="2"/>
     <views:SearchStatistics Margin="10, 5, 10, 5" Grid.Row="1"/>
   </Grid>
 </Window>

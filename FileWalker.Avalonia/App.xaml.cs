@@ -30,6 +30,12 @@ namespace FileWalker.Avalonia
 
             Thread computation = new Thread(
                 () => query.Process(Int32.Parse(args[3])));
+
+
+            window.Closed += (sender, e) => {
+                query.AbortSearch(); 
+            };
+            
             computation.Start();
             Run(window);
         }
