@@ -2,10 +2,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:views="clr-namespace:FileWalker.Avalonia.Views;assembly=FileWalker.Avalonia"
         Title="FileWalker"
-        SizeToContent="3">
+        SizeToContent="3"
+        Width = "200"
+        Height = "350" >
 
-  <Grid RowDefinitions="Auto, *">
-    <ListBox Items="{Binding Results.MatchingFilenames}" Grid.Row="0" Width="200" Height="300" HorizontalAlignment="2"/>
-    <views:SearchStatistics Margin="10, 5, 10, 5" Grid.Row="1"/>
+  <Grid RowDefinitions="*, Auto">
+    <ListBox Items="{Binding Results.MatchingFilenames}" Grid.Row="0" HorizontalAlignment="0" VerticalAlignment="Stretch" />
+    <views:SearchStatistics Margin="10, 5, 10, 5" Grid.Row="1" VerticalAlignment="3"/>
   </Grid>
 </Window>

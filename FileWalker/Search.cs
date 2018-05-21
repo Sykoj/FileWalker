@@ -109,7 +109,6 @@ namespace FileWalker {
                             Monitor.Pulse(Queue);
                         }
                     }
-
                 }
             });
         }
